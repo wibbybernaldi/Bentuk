@@ -1,30 +1,22 @@
 public class segitiga {
     private double alas;
     private double tinggi;
-    private double sisiA;
-    private double sisiB;
-    private double sisiC;
+    private double sisiMiring;
 
-    public segitiga(double a, double b, double c, double d, double e){
+    public segitiga(double a, double b, double c){
         alas = a;
         tinggi = b;
-        sisiA = c;
-        sisiB = d;
-        sisiC = e;
+        sisiMiring = c;
     }
     public void cetakProperti(){
         System.out.println("Alas Segitiga : "+alas);
         System.out.println("Tinggi Segitiga : "+tinggi);
-        System.out.println("Sisi A Segitiga : "+sisiA);
-        System.out.println("Sisi B Segitiga : "+sisiB);
-        System.out.println("Sisi C Segitiga : "+sisiC);
+        System.out.println("Sisi Miring Segitiga : "+sisiMiring);
     }
-    public void ubahProperti(double a, double b, double c, double d, double e){
+    public void ubahProperti(double a, double b, double c){
         alas = a;
         tinggi = b;
-        sisiA = c;
-        sisiB = d;
-        sisiC = e;
+        sisiMiring=c;
     }
     public double hitungLuas(){
         double Luas;
@@ -33,7 +25,7 @@ public class segitiga {
     }
     public double hitungKeliling(){
         double Kell;
-        Kell=sisiA+sisiB+sisiC;
+        Kell=alas+tinggi+sisiMiring;
         return Kell;
     }
 }
